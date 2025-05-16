@@ -14,7 +14,6 @@ public class Armstrong {
                   int digit = n % 10;
                   remainder = remainder + (digit * digit * digit);
                   n = n / 10;
-                  count++;
             }
             if(remainder == original)
             {

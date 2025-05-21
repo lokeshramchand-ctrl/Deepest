@@ -5,7 +5,6 @@ public class CheckSorted {
       public static void main(String[] args)
       {
             int n;
-            int so = 0;
             try (Scanner sc = new Scanner(System.in)) {
                   n = sc.nextInt();
                   int arr[] = new int[n];
@@ -17,7 +16,6 @@ public class CheckSorted {
                   {
                         if(arr[i] <= arr[i+1])
                         {
-                              so++;
                         }
                         else
                         {

@@ -9,7 +9,7 @@ public class ArrayInit {
                   int arr[] = new int[n];
                   for(int i = 0 ; i < n ; i++)
                   {
-                        arr[n] = sc.nextInt();
+                        arr[i] = sc.nextInt();
                   }
             }
       }

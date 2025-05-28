@@ -1,4 +1,4 @@
-/* 
+
 public class MergeArray {
       public int[] merge(int[] nums1, int[] nums2) {
             int n1 = nums1.length;
@@ -34,4 +34,3 @@ public class MergeArray {
         }
       }
 }
-*/

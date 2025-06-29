@@ -1,6 +1,7 @@
+import java.util.List;
 
 public class deletion {
-public Listnode removeNthFromEnd(Listnode head, int n) {
+public List removeNthFromEnd(Listnode head, int n) {
         // Store head node
         Listnode temp = head, prev = null;
         // If head node itself holds the key to be deleted

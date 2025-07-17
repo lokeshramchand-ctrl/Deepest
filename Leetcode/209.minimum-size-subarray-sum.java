@@ -57,7 +57,6 @@
 
 // @lc code=start
 
-import java.util.Arrays;
 
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {

@@ -66,7 +66,7 @@ class Solution {
         {
             int mid = low + (high - low) / 2;
             if(nums[mid] == target)
-            return true;
+            return true
             else if(nums[mid] > target)
             {
                 low++;

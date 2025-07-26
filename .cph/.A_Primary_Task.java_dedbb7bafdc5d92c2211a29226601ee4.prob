@@ -1,0 +1,1 @@
+{"name":"A. Primary Task","url":"https://codeforces.com/contest/2000/problem/A","interactive":false,"memoryLimit":0,"timeLimit":3000,"group":"Codeforces - Codeforces Round 966 (Div. 3)","tests":[{"id":1753366893607,"input":"7\n100\n1010\n101\n105\n2033\n1019\n1002\n","output":"NO\nYES\nNO\nYES\nNO\nYES\nNO\n"}],"srcPath":"/Users/home/Downloads/Deepest/A_Primary_Task.java"}

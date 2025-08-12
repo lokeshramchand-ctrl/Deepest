@@ -1,40 +1,35 @@
-import java.util.*;
-
 public class Main {
-
     public static void main(String[] args) {
-    int[][] mat = {
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
+        int[][] matrix = {
+            {1, 2, 3},
+            {3, 1, 2},
+            {2, 3, 1}
+        };
 
-    int r = mat.length;
-    int c = mat[0].length;
-    //int sum = 0;
-    // for (int i = 0; i < r; i++) {
-    //     for (int j = 0; j < c; j++) {
-    //         if (i == j) {
-    //             sum += mat[i][j];
-    //         }
-    //     }
-    // }
-    for(int i = 0  ; i < r  ; i++)
-    {
-        for(int j = c - 1 ; j >= 0 ; j--)
-        {
-            if(i == j){
-            System.out.print(mat[i][j] + " ");
+        // Display the matrix
+        System.out.println("Matrix:");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
-            else if ((i + j) == (c - 1)) {
-                    System.out.print(mat[i][j] + " ");
-                }
-            
-        }
             System.out.println();
+        }
 
+        // // Check validity (logic inline)
+        // int r = matrix.length;
+        // int c = matrix[0].length;
+        // boolean isValid = true;
+
+        // for (int i = 0; i < r - 1; i++) {
+        //     for (int j = 0; j < c - 1; j++) {
+        //         if (matrix[i][j] == matrix[i + 1][j + 1]) {
+        //             isValid = false;
+        //             break;
+        //         }
+        //     }
+        //     if (!isValid) break;
+        // }
+
+        // System.out.println("Is matrix valid? " + isValid);
     }
-
-}
-
 }

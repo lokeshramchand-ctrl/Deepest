@@ -18,8 +18,12 @@ class Solution {
                 {
                     sum+=mat[i][j];
                 }
+                else if ((i + j) == (c - 1)) {
+                   sum+=mat[i][j];
+                }
             }
         }
+        return sum;
     }
 }
 // @lc code=end

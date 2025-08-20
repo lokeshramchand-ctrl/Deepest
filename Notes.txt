@@ -1,0 +1,2 @@
+n = no.of seats in bus
+arr = seats occupied in chronological order

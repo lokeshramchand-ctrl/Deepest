@@ -23,10 +23,23 @@ static void Frequency(int arr[], int n)
             map.put(arr[i], 1);
         }
     }
-    // Traverse through map and print frequencies
-    for (Map.Entry<Integer,Integer> entry : map.entrySet())
-    {
-        System.out.println(entry.getKey());
+
+// Step 1: Find the maximum value
+int maxValue = Integer.MIN_VALUE;
+for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    if (entry.getValue() > maxValue) {
+        maxValue = entry.getValue();
     }
+}
+int count = 0;
+// Step 2: Print keys with value equal to maxValue
+for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    if (entry.getValue() == maxValue) {
+      //  System.out.println(entry.getKey());
+        count++;
+    }
+}
+System.out.println(count);
+
 }
 }

@@ -1,22 +1,28 @@
 class Solution {
     public static void main(String[] args) {
-        String[] strs = {"flower","flow","flight"};
-        String check = "ad";
-        char[] charsToCheck = check.toCharArray();
-        int count = 0;
+        String[] strs = { "flower", "flow", "flight" };
+StringBuilder commonPrefix = new StringBuilder();
         for (String word : strs) {
-            boolean letter = false;
-            for (char c : charsToCheck) {
-                if (word.indexOf(c) != -1) {
-                    letter = true;
+            for (int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                System.out.print(c + " ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < strs[0].length(); i++) { 
+            char c = strs[0].charAt(i);
+            boolean allMatch = true;
+            for (int j = 1; j < strs.length; j++) {
+                if (i >= strs[j].length() || strs[j].charAt(i) != c) {
+                    allMatch = false;
                     break;
                 }
             }
-            if (!letter) {
-                count++;
+            if (allMatch) {
+            commonPrefix.append(c);
             }
         }
-        System.out.println(count);
+String s = commonPrefix.toString();
+return s ;
     }
-
 }

@@ -8,14 +8,20 @@ class Solution {
         System.out.println();
         String check = "ad";
         char[] charsToCheck = check.toCharArray();
-
+        int count = 0;
         for (String word : words) {
+            boolean letter = false;
             for (char c : charsToCheck) {
                 if (word.indexOf(c) != -1) {
-                    System.out.println(word + " contains the letter " + c);
+                    letter = true;
+                    break;
                 }
             }
+            if (!letter) {
+                count++;
+            }
         }
+        System.out.println(count);
     }
 
 }

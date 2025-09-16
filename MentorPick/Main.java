@@ -1,28 +1,31 @@
+
 class Solution {
     public static void main(String[] args) {
-        String[] strs = { "flower", "flow", "flight" };
-StringBuilder commonPrefix = new StringBuilder();
-        for (String word : strs) {
-            for (int i = 0; i < word.length(); i++) {
-                char c = word.charAt(i);
-                System.out.print(c + " ");
-            }
-            System.out.println();
-        }
-        for (int i = 0; i < strs[0].length(); i++) { 
-            char c = strs[0].charAt(i);
-            boolean allMatch = true;
-            for (int j = 1; j < strs.length; j++) {
-                if (i >= strs[j].length() || strs[j].charAt(i) != c) {
-                    allMatch = false;
-                    break;
+        int[][] nums = { { 1, 1, 1 },
+                { 1, 0, 1 },
+                { 1, 1, 1 } };
+        int m = nums.length;
+        int n = nums[0].length;
+        boolean zeroi[] = new boolean[m];
+        boolean zeroesj[] = new boolean[n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (nums[i][j] == 0) {
+                    zeroi[i] = true;
+                    zeroesj[j] = true;
                 }
             }
-            if (allMatch) {
-            commonPrefix.append(c);
+        }
+
+        for (int i = 0; i < m; i++) {
+            for(int j = 0 ; j < n ; j++)
+            {
+                if(zeroi[i] == true || zeroesj[j] == true)
+                {
+                    nums[i][j] = 0;
+                }
             }
         }
-String s = commonPrefix.toString();
-return s ;
+        
     }
 }

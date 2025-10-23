@@ -1,1 +1,0 @@
-{"name":"A. Submission is All You Need","url":"https://codeforces.com/contest/2130/problem/A","interactive":false,"memoryLimit":0,"timeLimit":3000,"group":"Codeforces - Codeforces Round 1040 (Div. 2)","tests":[{"id":1755785046736,"input":"2\n3\n0 1 1\n3\n1 2 3\n","output":"3\n6\n"}],"srcPath":"/Users/home/Downloads/Deepest/A_Submission_is_All_You_Need.java"}
